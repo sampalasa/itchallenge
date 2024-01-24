@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it challenge</title>
+    <link rel="shortcut icon" href="./assets/img/logo ok OK.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="w-screen overflow-x-hidden">
+    <!-- header section -->
+    <main class="w-full bg-blue-100 h-max">
+        <header class="w-full lg:container lg:mx-auto border-black/5 p-4 lg:p-6">
+            <nav class="px-5 flex items-center justify-between">
+                <a href="/" class="relative z-50 overflow-hidden">
+                    <img id="logo" src="./assets/img/logo ok OK.png" class="w-12 lg:w-16" alt="">
+                </a>
+                <div id="beforemenu" class="absolute h-0 duration-200 w-screen z-30 bg-white backdrop-blur-lg top-0 bottom-0 left-0 right-0 "></div>
+                <ul id="menu__toggle" class="absolute hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:flex lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
+                   <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="/" class="block" id="lien1">Acceuil</a></li>
+                   <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden"><a href="/chat" class="block" id="lien2">chatbot</a></li>
+                   <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent overflow-hidden">
+                   <li id="link3" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white"><a href="/inscription" class="flex items-center">
+                    <span>Inscription</span>
+                    <i id="fleche1" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
+                    </a></li>
+                </ul>
+                <ul id="menu__toggle2" class="absolute lg:hidden z-40 text-gray-700  duration-300 scale-0 lg:scale-100 top-20 w-[70vw] p-4 lg:p-0 rounded-xl lg:text-lg lg:items-center lg:rounded-none lg:w-max bg-white shadow-md lg:shadow-none lg:bg-transparent lg:overflow-hidden lg:top-0 lg:relative">
+                    <li id="link1" class="mt-1 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="/" class="block">Acceuil</a></li>
+                    <li id="link2" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent"><a href="/chat" class="block">chatbot</a></li>
+                    <li id="link3" class="mt-1 lg:ml-3 lg:mt-0 p-2 lg:p-0 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-transparent">
+                    <li id="link3" class="mt-5 group shadow-md lg:ml-3 lg:mt-0 p-3 px-5 hover:bg-blue-600 hover:text-white hover:duration-300 rounded-lg lg:hover:text-blue-600 lg:hover:bg-blue-600/20 lg:rounded-full bg-blue-600 w-max text-white">
+                        <a href="/inscription" class="flex items-center">
+                            <span>Inscription</span>
+                            <i class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 lg:ml-2 shadow-md bg-white text-blue-600 p-1 rounded-full'></i>
+                        </a></li>
+                 </ul>
+                <button id="menubtn" title="toggle nav btn" class="lg:hidden ml-2 lg:ml-0 z-50 relative mr-4">
+                    <div id="bar-1" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300"></div>
+                    <div id="bar-2" class="bg-gray-800 h-0.5 w-6 rounded-full duration-300 mt-2"></div>
+                </button>  
+            </nav>
+        </header>
+        <section class="mt-8 lg:mt-4 bg-blue-100 grid place-items-center w-full p-4">
+            <div class="relative lg:w-[60vw] grid place-items-center">
+                <div id="rotateText" class="flex justify-center relative w-[80vw] lg:w-[30vw]">
+                    <h4 id="uplpresente" class="bg-blue-600 text-xs -top-1 lg:text-lg shadow-md absolute left-0 text-white rounded-lg p-2 -rotate-12 text-center w-max px-5 -ml-5 lg:-top-4">Upl sc. info Presente</h4>
+                </div>
+                <div class="absolute w-[80vw] flex justify-between lg:w-[60vw] top-0">
+                    <img id="img1" src="./assets/img/reseau-mondial.png" width="60" class="block scale-75 mt-16 lg:mt-7 lg:-ml-8" alt="">
+                    <img id="img2" src="./assets/img/tech.png" class="aspect-square w-10 h-10 scale-505 relative -top-5" alt="">
+                </div>
+                
+                <div class="flex text-[2rem] lg:text-6xl text-gray-900 font-extrabold flex-col items-center">
+                    <div class="overflow-hidden py-2">
+                        <h2 id="headtext1" class="mt-3 lg:mt-6">It <span class="text-blue-600">Challenge</span></h2>
+                    </div>
+                    <div class="overflow-hidden py-2">
+                        <h2 id="headingtext2" class="mt-1 lg:mt-4">2023</h2>
+                    </div> 
+                    
+
+                <div class="mt-5 overflow-hidden">
+                    <div style="width:400px">
+                        <% if(error && error.length>0){ %>
+                        <div class="warning-message">
+                            <div class="header">
+                                <%= error %>
+                            </div>
+                        </div>
+                        <% } %>
+                        <% if(success && success.length > 0) { %>
+                        <div class="success-message">
+                            <div class="header">
+                                <%= success%>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+                    <p id="paragraph" class="w-[90vw] lg:w-[40vw] lg:text-xl text-center text-gray-600">Le plus grand concours Tech des étudiants en sciences informatiques de l'université protestante de lubumbashi (UPL)</p>
+                </div>
+                <div class="absolute lg:w-[80vw] flex justify-between w-[80vw] bottom-0">
+                    <img id="img3" src="./assets/img/code (1).png" width="50" class="block relative scale-75 lg:scale-100" alt="">
+                    <img id="img4" src="./assets/img/reseau.png" width="50" alt="" class="scale-75 lg:scale-100">
+                </div>
+                <ul id="inscri_btn" class="mt-12 lg:mt-6 flex justify-center">
+                    <li class="mt-5 lg:ml-3 shadow-md group lg:mt-0 w-full lg:w-max p-4 lg:p-3 px-5 hover:text-white hover:duration-300 lg:hover:text-blue-600 lg:hover:bg-blue-600/20 rounded-full bg-blue-600 text-white">
+                        <a href="/inscription" class="flex items-center">
+                            <span>Inscription</span>
+                            <i id="fleche2" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 shadow-md lg:ml-2 bg-white text-blue-600 p-1 rounded-full'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="image_box" class=" w-full mb-8 p-3 aspect-video lg:w-[70vw] mt-8 lg:mt-5 h-[50vh] lg:h-[70vh] overflow-hidden  lg:-ml-10">
+                <img src="./assets/img/illustration header.png" class="aspect-auto" alt="">
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- logo partner section -->
+    <section class="relative bg-gray-100 lg:overflow-hidden flex flex-col lg:flex-row lg:justify-around items-center h-max lg:h-[15vh] p-4">
+        <div>
+            <h3 id="partner_text" class="text-gray-600 lg:text-xl">Rencontrez nos partenaires</h3>
+        </div>
+        <div class="grid grid-cols-2 items-center justify-center lg:grid-cols-4 gap-6 p-4 lg:p-7">
+            <img src="./assets/img/partners-1.png" width="90" alt="">
+            <img src="./assets/img/partner2.png" width="80"  class="lg:ml-8" alt="">
+            <img src="./assets/img/partner3.png" width="80"  class="self-center lg:ml-12" alt="">
+            <img src="./assets/img/partner4.png" width="40"  class="self-center ml-3 lg:ml-14" alt="">
+        </div>
+    </section>
+
+    <!-- Découverte section -->
+    <section class="lg:h-[80vh] flex items-center w-full h-[100vh]">
+        <!-- <div id="sec3" class="h-[100vh] bg-black w-full"></div> -->
+        <div class="grid w-screen place-content-center gap-4 p-4 lg:h-[80vh] lg:grid-cols-2">
+            <div class=" grid mt-6 lg:mt-0 lg:grid-cols-3 h-[30vh] lg:h-[60vh] w-full p-4 lg:p-6">
+                <div class="hidden lg:block"></div>
+                <div class="col-span-2 lg:col-span-2 aspect-video">
+                    <img src="./assets/img/presentation.jpg" class="object-cover aspect-video h-full w-full rounded-xl" alt="">
+                </div>
+                <div class="hidden lg:block"></div>
+                <div class="hidden lg:block"></div>
+            </div>
+            <div class="grid grid-cols-3 items-center p-4 lg:p-6 w-full">
+                <div class="col-span-3 lg:col-span-2 p-4 lg:p-0">
+                    <h2 class="font-bold text-3xl lg:text-4xl text-slate-950">Présentation</h2>
+                    <p class="mt-5 text-gray-500">
+                        Le "IT Challenge" est un concours inter-étudiant en informatique encourageant <b>recherche</b>, <b>innovation</b> et <b>créativité</b>. Les participants développent des projets concrets avec des algorithmes et des applications adaptables. Les équipes présélectionnées présentent leurs prototypes lors du défi final.
+                    </p>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- objectif section -->
+    <section class="h-max w-full ">
+        <!-- <div id="sec3" class="h-[100vh] bg-black w-full"></div> -->
+        <div class="flex flex-col items-center  mb-8  p-4 lg:p-6 w-full">
+            <div>
+                <h2 class="font-bold text-3xl lg:text-6xl text-center text-slate-950">Objectif</h2>
+                <p class="mt-2 text-gray-600 text-center">Découvrez les objectifs du it challenge</p>
+            </div>
+            <div class="lg:col-span-2 grid gap-3 lg:grid-cols-3 lg:gap-4 mt-16 lg:mt-20">
+                <div class="border p-4 rounded-2xl lg:w-72 w-[22rem]">
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-search'></i></span>
+                    <h4 class="font-semibold mt-2">Encourager la recherche</h4>
+                     <p class="mt-2 text-gray-600">
+                        Stimuler les participants à explorer de nouvelles idées et technologies
+                     </p>
+                </div>
+                <div class="border p-4 rounded-2xl lg:w-72 w-[22rem]">
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-bulb'></i></span>
+                    <h4 class="font-semibold mt-2">Faire progresser l'innovation</h4>
+                     <p class="mt-2 text-gray-600">
+                        Catalyser des projets novateurs dans les domaines de l'intelligence artificielle et de la fintech.
+                     </p>
+                </div>
+                <div class="border p-4 rounded-2xl lg:w-72 w-[22rem]">
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-command'></i></span>
+                    <h4 class="font-semibold mt-2"> Développer la créativité </h4>
+                     <p class="mt-2 text-gray-600">
+                        Inspirer la créativité en permettant aux étudiants de concrétiser leurs idées.
+                     </p>
+                </div>
+                <div class="border p-4 rounded-2xl lg:w-72 w-[22rem]">
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-vector'></i></span>
+                    <h4 class="font-semibold mt-2"> Mise en pratique </h4>
+                     <p class="mt-2 text-gray-600">
+                        Offrir aux étudiants une opportunité de mettre en pratique leurs compétences en informatique.
+                     </p>
+                </div>
+                <div class="border p-4 rounded-2xl lg:w-72 w-[22rem]">
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-chevrons-up'></i></span>
+                    <h4 class="font-semibold mt-2"> Excellence </h4>
+                     <p class="mt-2 text-gray-600">
+                        Promouvoir l'excellence en informatique au sein de la communauté étudiante
+                     </p>
+                </div>
+                <div class="border p-4 rounded-2xl lg:w-72 w-[22rem]">
+                    <span class="h-7 w-7 flex justify-center items-center rounded-full border bg-gray-50 text-blue-950"><i class='bx bx-trending-up'></i></span>
+                    <h4 class="font-semibold mt-2"> Encourager </h4>
+                     <p class="mt-2 text-gray-600">
+                        Encourager les étudiants à développer leur créativité et leur esprit d'innovation.
+                     </p> 
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Avantage -->
+    <section class="p-4 flex mb-16 flex-col lg:h-[95vh] items-center justify-center"> 
+        <div class="mb-8">
+            <h2 class="font-bold text-3xl lg:text-6xl text-center text-slate-950">Avantages</h2>
+            <p class="mt-2 text-gray-600 text-center">Voici les avantages du it challenge</p>
+        </div>
+        <div class="grid mt-5 lg:mt-10 gap-4 lg:w-[70vw] lg:grid-cols-3">
+            <div class="p-4 bg-gray-100 rounded-2xl">
+                <span class="bg-blue-950 text-white text-xl rounded-full h-8 w-8 flex justify-center items-center shadow-md">1</span>
+                <p class="mt-3">
+                    Développement Personnel : Offre aux étudiants une opportunité d'apprentissage pratique et de développement de compétences techniques.    
+                </p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-2xl">
+                <span class="bg-blue-950 text-white text-xl rounded-full h-8 w-8 flex justify-center items-center shadow-md">2</span>
+                <p class="mt-3">
+                    Visibilité et Réseautage : L'occasion de présenter leurs idées devant un public professionnel,  de créer des liens avec des experts du secteur et gagner des potentiels financements.
+                </p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-2xl">
+                <span class="bg-blue-950 text-white text-xl rounded-full h-8 w-8 flex justify-center items-center shadow-md">3</span>
+                <p class="mt-3">
+                    Prix et Reconnaissance : Des récompenses pour les projets les plus innovants offert par la faculté des sciences informatiques et la chance d'être reconnu(e) pour ses réalisations.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Theme retenues -->
+    <section class="lg:h-max mb-8 bg-blue-950/5 rounded-[3rem] grid place-content-center p-4  h-max">
+        <div class="flex flex-col  items-center mt-8">
+            <h3 class="text-3xl lg:text-6xl font-bold">Thêmes <span class="text-blue-600">2024</span></h3>
+            <p class="text-gray-600 mt-3 text-center">Les thêmes ayant été Rétenus pour cette nouvelle édition</p>
+        </div>
+        <div class="grid items-center justify-center gap-4 mt-6 mb-8 lg:mt-16 lg:gap-6 lg:grid-cols-2">
+            <div class="bg-blue-600/20 text-sm p-4 lg:p-6 rounded-3xl w-[22rem] lg:w-[40vw] border">
+                <h4 class="font-semibold text-2xl">Intélligence artificielle (IA)</h4>
+                <p class="mt-2 text-gray-700">
+                    L'intelligence artificielle (IA) est un domaine en pleine évolution qui a le potentiel de révolutionner de nombreux secteurs de la société. L’IA fait référence à la capacité des machines, des ordinateurs ou des programmes informatiques à exécuter des tâches qui nécessitent généralement l'intelligence humaine. Elle implique la simulation de processus cognitifs humains tels que l'apprentissage, la résolution de problèmes, la reconnaissance de formes, la compréhension du langage naturel, et bien plus encore.
+                    Les participants au concours IT Challenge sont invités à proposer des projets innovants qui exploitent l'IA pour résoudre des problèmes réels.
+                </p>
+                <ul class="font-medium grid lg:grid-cols-3 gap-3 rounded-xl mt-4">
+                    <li class="bg-gray-100 p-3 shadow-lg rounded-xl">Exploration des applications de l'IA dans divers domaines tels que la santé, l'éducation, les transports, etc.</li>
+                    <li class="bg-gray-100 p-3 shadow-lg rounded-xl">Développement d'algorithmes novateurs pour résoudre des problèmes spécifiques.</li>
+                    <li class="bg-gray-100 p-3 shadow-lg rounded-xl">Utilisation de l'IA pour créer des expériences utilisateur plus intuitives et efficaces.</li>
+                </ul>
+            </div>
+            <div class="bg-green-600/20 text-sm p-4 lg:p-6 rounded-3xl w-[22rem] lg:w-[40vw] border">
+                <h4 class="font-semibold text-2xl">Fintech</h4>
+                <p class="mt-2 text-gray-700">
+                    La fintech, qui est la contraction de "finance" et "technologie", désigne l'utilisation de la technologie pour innover et améliorer les services financiers. Cela englobe un large éventail de produits, services et technologies qui transforment et facilitent les opérations financières traditionnelles. 
+                    L'objectif principal de la fintech est d'optimiser les processus financiers en utilisant des solutions technologiques novatrices pour répondre aux besoins changeants des consommateurs et des entreprises dans le domaine financier. Cette fusion entre finance et technologie vise à créer des expériences financières plus simples, rapides, sécurisées et adaptées aux modes de vie modernes.
+                    Les participants au concours IT Challenge sont invités à proposer des projets innovants qui utilisent les technologies de la fintech pour améliorer les services financiers.
+
+                </p>
+                <ul class="font-medium grid lg:grid-cols-3 gap-3 mt-4 rounded-xl">
+                    <li class="bg-gray-100 p-3 rounded-xl shadow-lg">Innovation dans les services financiers : paiements mobiles, blockchain, gestion financière personnelle, etc.</li>
+                    <li class="bg-gray-100 p-3 rounded-xl shadow-lg">Création de solutions technologiques pour améliorer l'accessibilité aux services financiers.</li>
+                    <li class="bg-gray-100 p-3 rounded-xl shadow-lg">Utilisation de la technologie pour garantir la sécurité et la confidentialité des données financières.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edition 2023 -->
+    <section class="flex flex-col mb-8 p-4 items-center">
+        <div class="mb-8 mt-8">
+            <h2 class="font-bold text-3xl lg:text-6xl text-center text-slate-950">Edition <span class="text-blue-600">2023</span></h2>
+            <p class="mt-2 text-gray-600 text-center">ils ont gagné l'édition 2023</p>
+        </div>
+        <div class="mt-5 grid gap-4 lg:w-[70vw] lg:grid-cols-2">
+            <img src="./assets/img/gagnant1.jpg" class="rounded-3xl" alt="">
+            <img src="./assets/img/gagnant2.jpg" class="rounded-3xl" alt="">
+            <img src="./assets/img/gagnant3.jpg" class="rounded-3xl" alt="">
+            <img src="./assets/img/gagnant4.jpg" class="rounded-3xl" alt="">
+        </div>
+    </section>
+
+    <section class="flex justify-center p-4 mb-8 mt-2">
+        <div class="mt-5 grid gap-4 bg-blue-950 rounded-[3rem] w-[90vw] h-max  lg:h-[40vh] lg:w-[70vw] place-content-center p-4">
+            <div class="flex flex-col items-center">
+                <h2 class="text-white text-center lg:w-[70%]">
+                    Inscrit toi pour te challenger et inover grâce à la technologie et tenter de remporter la cagnote finale avec ta sollution dans le domaine de la fintech et de l'IA
+                </h2>
+                <ul class="mt-4">
+                    <li class="mt-5 lg:ml-3 shadow-md group lg:mt-0 w-full lg:w-max p-4 lg:p-3 px-5 hover:text-white hover:duration-300 lg:hover:text-blue-600 lg:hover:bg-blue-600/20 rounded-full bg-blue-600 text-white">
+                        <a href="/inscription" class="flex items-center">
+                            <span>Inscription</span>
+                            <i id="fleche2" class='bx bx-right-arrow-alt ml-1 group-hover:translate-x-1 duration-300 shadow-md lg:ml-2 bg-white text-blue-600 p-1 rounded-full'></i>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="h-max mt-8 mb-16 lg:h-[100vh] w-screen grid place-content-center">
+        <div class="flex flex-col items-center">
+            <h2 class="font-bold text-3xl lg:text-6xl text-center text-slate-950">FAQs</h2>
+            <p class="mt-2 text-gray-600">Ici vous aurez des reponses à vos questions</p>
+        </div>
+        <div class="mt-16 lg:mt-20 duration-300">
+            <div class="border faq_box duration-300 flex flex-col relative  justify-center overflow-hidden h-[10vh] p-4 lg:p-6 rounded-xl w-[90vw] lg:w-[60vw]">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-xl font-semibold">C'est quoi le It Challenge ?</h1>
+                    <div class="h-10 w-10 rounded-full flex justify-center items-center">
+                        <button title="plus bouton" class="fac-button1 flex justify-center items-center relative z-40 h-full w-full">
+                            <div>
+                                <div class="bar1 bg-slate-950 block h-0.5 w-4 absolute"></div>
+                                <div class="bar2 bg-slate-950 block h-0.5 w-4 rotate-90 "></div>
+                            </div>
+                        </button>
+                        <div class="fac-croix1 hidden">
+                            <button title="plus bouton" class=" rotate-45 justify-center items-center relative z-40 h-full w-full">
+                                <div>
+                                    <div class="bar1 bg-slate-950 block h-0.5 w-4 absolute"></div>
+                                    <div class="bar2 bg-slate-950 block h-0.5 w-4 rotate-90 "></div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="mt-3 absolute z-10 w-full faq_reponse1 duration-300 opacity-0">
+                    <p>
+                        Le it challenge est un concours inter-etudiant organisé à la faculté des sciences informatiques de l'université protestante de lubumbashi
+                    </p>
+                </div>
+            </div>
+            <div class="border faq_box2 mt-4 duration-300 flex flex-col relative  justify-center overflow-hidden h-[10vh] p-4 lg:p-6 rounded-xl w-[90vw] lg:w-[60vw]">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-xl font-semibold">Comment s'inscrire ?</h1>
+                    <div class="h-10 w-10 rounded-full flex justify-center items-center">
+                        <button title="plus bouton" class="fac-button2 flex justify-center items-center relative z-40 h-full w-full">
+                            <div>
+                                <div class="bar1 bg-slate-950 block h-0.5 w-4 absolute"></div>
+                                <div class="bar2 bg-slate-950 block h-0.5 w-4 rotate-90 "></div>
+                            </div>
+                        </button>
+                        <div class="fac-croix2 hidden">
+                            <button title="plus bouton" class=" rotate-45 justify-center items-center relative z-40 h-full w-full">
+                                <div>
+                                    <div class="bar1 bg-slate-950 block h-0.5 w-4 absolute"></div>
+                                    <div class="bar2 bg-slate-950 block h-0.5 w-4 rotate-90 "></div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="mt-3 absolute z-10 w-full faq_reponse2 duration-300 opacity-0">
+                    <p>
+                        Pour s'inscrire au it challenge veuillez cliquer <a href="/inscription" class="underline">ici </a> et suivez les instructions
+                    </p>
+                </div>
+            </div>
+            <div class="border faq_box3 mt-4 duration-300 flex flex-col relative  justify-center overflow-hidden h-[10vh] p-4 lg:p-6 rounded-xl w-[90vw] lg:w-[60vw]">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-xl font-semibold">ça se déroule quand ?</h1>
+                    <div class="h-10 w-10 rounded-full flex justify-center items-center">
+                        <button title="plus bouton" class="fac-button3 flex justify-center items-center relative z-40 h-full w-full">
+                            <div>
+                                <div class="bar1 bg-slate-950 block h-0.5 w-4 absolute"></div>
+                                <div class="bar2 bg-slate-950 block h-0.5 w-4 rotate-90 "></div>
+                            </div>
+                        </button>
+                        <div class="fac-croix3 hidden">
+                            <button title="plus bouton" class=" rotate-45 justify-center items-center relative z-40 h-full w-full">
+                                <div>
+                                    <div class="bar1 bg-slate-950 block h-0.5 w-4 absolute"></div>
+                                    <div class="bar2 bg-slate-950 block h-0.5 w-4 rotate-90 "></div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="mt-3 absolute z-10 w-full faq_reponse3 duration-300 opacity-0">
+                    <p>
+                        pour l'édition 2024 , le concours it challenge se deroulera pendant 7 mois, de janvier jusqu'en juillet 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-6 lg:p-4 lg:h-[50vh] flex flex-col justify-around  bg-blue-950 rounded-t-[3rem]">
+        <div class="flex flex-col lg:flex-row justify-around"> 
+            <div class="text-white text-xs mt-5 lg:mt-0 lg:text-lg flex flex-col lg:flex-row justify-between lg:w-[90vw]">
+                <div class="flex w-[70vw] lg:w-[40vw] justify-between items-center">
+                    <div>
+                        <a href="./index.html" class="relative z-50">
+                            <img id="logo" src="./assets/img/logo ok OK.png" class="w-20 lg:w-24 shadow-lg rounded-full" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col">
+                        <a href="/" class="block mt-3">Acceuil</a>
+                        <a href="/chat" class="block mt-3">Chatbot</a>
+                        
+                   
+                    </div>
+                </div>
+                <div class="flex flex-col mt-5 lg:mt-0 lg:ml-6">
+                    <a href="" class="block mt-3 underline">Rejoindre la communauté</a>
+                    <a href="https://upl-univ.ac/" class="block mt-3 underline">Visiter le site de UPL</a>
+                </div>
+                <div class="flex flex-col lg:ml-6 mt-5 lg:mt-3">
+                    <p>nous suivre sur les Réseaux : </p>
+                    <div class="flex mt-3">
+                        <a href="" class="block text-white"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="" class="block ml-3 text-white"><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href="" class="block ml-3 text-white"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="flex justify-center text-sm lg:text-lg mt-6 lg:mt-0 w-[80vw]  lg:w-max text-white">
+                <h4 class="font-semibold text-center">Copyright &copy; 2023 UPL FSI It Challenge, Tous Droits Réservées</h4>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- link for lenis smooth scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
+    <script src="./src/js/bundle.js"></script>
+
+    <!-- initialisation du smooth scroll -->
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+</body>
+</html>

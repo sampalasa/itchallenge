@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="w-screen overflow-x-hidden">
+    <main class="w-full">
+        <nav class="p-4 border-b flex justify-between items-center">
+            <ul class="flex gap-4">
+                <li><a href="/admin/homead" class="block p-2 bg-blue-950 shadow-md text-white rounded-lg hover:bg-blue-800 duration-300 drop-shadow-lg">Dashboard</a></li>
+                <li><a href="/admin/etudiant" class="block p-2 text-gray-900">Etudiants</a></li>
+                <li><a href="/admin/group" class="block p-2 text-gray-900">Groupe</a></li>
+            </ul>
+            <div class="group">
+                <div class="h-8 w-8 bg-gray-500 rounded-full flex justify-center items-center text-white group-hover:cursor-pointer">s</div>
+                <div class="bg-gray-100 mt-3 w-32 translate-y-3 group-hover:translate-y-0 duration-300 opacity-0 group-hover:opacity-100 rounded-lg shadow-md absolute -z-10 group-hover:z-50 right-10  border p-2">
+                    <div>
+                        <h2 class="font-semibold text-gray-900">The pansa</h2>
+                        <p class="text-sm text-gray-500">Admin</p>
+                    </div>
+                    <a href="/admin"><button class="p-1 px-2 mt-4 w-full bg-red-600 text-white rounded-lg" >Log out</button></a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="flex justify-center">
+            <section class="grid justify-center lg:w-[50vw]">
+                <section class="grid gap-4 lg:gap-6 grid-cols-2 p-4 lg:p-6">
+                    <div class="bg-blue-600 lg:h-max text-white shadow-sm flex flex-col items-center rounded-lg p-4 px-6">
+                        <h2 class="text-xl font-medium"><%= usernameCount %></h2>
+                        <p>Groupe</p>
+                    </div>
+                    <div class="bg-blue-600 lg:h-max text-white shadow-sm flex flex-col items-center rounded-lg p-4 px-6">
+                        <h2 class="text-xl font-medium"><%= totalStudents %></h2>
+                        <p>Etudiants</p>
+                    </div>
+                </section>
+        
+                <section class="p-4 flex flex-col items-center">
+                    <div class="flex justify-center p-4">
+                        <h3 class="rounded-lg bg-blue-950/5 text-blue-950/90 p-2 w-[70vw] text-center">Actions Rapides</h3>
+                    </div>
+                    
+<div style="width:400px">
+    <% if(error && error.length>0){ %>
+    <div class="warning-message">
+        <div class="header">
+            <%= error %>
+        </div>
+    </div>
+    <% } %>
+    <% if(success && success.length > 0) { %>
+    <div class="success-message">
+        <div class="header">
+            <%= success%>
+        </div>
+    </div>
+    <% } %>
+</div>
+                    <div class="p-4 grid gap-2 grid-cols-2 justify-center"> 
+                        <a href="/admin/group" class="block p-2 border text-blue-600 w-max px-3 rounded-lg">liste des groupes</a>
+                        <a href="/admin/etudiant" class="block border text-blue-600 w-max px-3  p-2 rounded-lg">liste des étudiants</a>
+                        <a href="/admin/ajoute" class="block border text-blue-600 w-max px-3  p-2 rounded-lg">ajouter une équipe</a>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
+
